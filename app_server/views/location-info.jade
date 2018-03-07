@@ -1,0 +1,48 @@
+extends layout
+
+//include _includes/sharedHTMLfunctions
+
+block content
+    .row.page-header: .col-lg-12
+        h1 Заголовок
+    .row
+        .col-xs-12.col-md-9
+            .row
+                .col-xs-12.col-sm-6
+                    p.rating
+                        //+outputRating(location.rating)
+                    p Описание
+                    .panel.panel-primary
+                        .panel-heading
+                            h2.panel-title Описание
+                        .panel-body
+
+                    .panel.panel-primary
+                        .panel-heading
+                            h2.panel-title Прочее
+                        .panel-body
+
+                .col-xs-12.col-sm-6.location-map
+                    .panel.panel-primary
+                        .panel-heading
+                            h2.panel-title Карта расположения
+                        .panel-body
+                            //img.img-responsive.img-rounded(src="http://maps.googleapis.com/maps/api/staticmap?center=#{location.coords.lat},#{location.coords.lng}&zoom=17&size=400x350&sensor=false&markers=#{location.coords.lat},#{location.coords.lng}&scale=2")
+            .row
+                .col-xs-12
+                    .panel.panel-primary.review-panel
+                        .panel-heading
+                            //a.btn.btn-default.pull-right(href="/location/review/new") Add review
+                            h2.panel-title Комментарии
+                        .panel-body.review-container
+
+        .col-xs-12.col-md-3
+            p.lead Токопроводящая жила - медная, однопроволочная или многопроволочная, круглой или секторной формы, 1 или 2 класса по ГОСТ 22483.
+                | Изоляция - из поливинилхлоридного пластиката (маркировка жил цветовая).
+                | Скрутка - изолированные жилы многожильных кабелей скручены в сердечник с водоблокирующими элементами.
+                | Внутренняя оболочка - из ПВХ пластиката или мелонаполненной невулканизированной резины с заполнением наружных промежутков между изолированными жилами. Допускается заполнение жгутами наружных промежутков между круглыми изолированными жилами с наложением скрепляющих лент и экструдированной внутренней оболочкой, допускается обмотка лентами из полимерного материала. Допускается наложение двухслойной внутренней экструдированной оболочки.
+                | Гидроизоляционный слой - из электропроводящей водоблокирующей ленты.
+                | Экран - из медных проволок и спирально наложенной медной ленты. Допускается наложение экрана из медных лент.
+                | Гидроизоляционный слой - из водоблокирующих лент.
+                | Наружная оболочка - из ПВХ пластиката.
+                | Источник: https://cable.ru/cable/group-vvgg.php
