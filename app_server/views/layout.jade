@@ -11,15 +11,48 @@ html
             .container
 
                 .navbar-header
-                    a.navbar-brand(href='/') AS
+                    a.navbar-brand(href='/') Главная
                 button.navbar-toggle( type='button', data-toggle='collapse', data-target='#navbar-main')
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
                 #navbar-main.navbar-collapse.collapse
                     ul.nav.navbar-nav
+
+
+                        li(class="dropdown" id="menu1")
+                            a(class="dropdown-toggle" data-toggle="dropdown" href="#menu1") Options
+                                b(class="caret")
+                                ul(class="dropdown-menu")
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
+                        li(class="dropdown" id="menu1")
+                            a(class="dropdown-toggle" data-toggle="dropdown" href="#menu2") Options
+                                b(class="caret")
+                                ul(class="dropdown-menu")
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
+                        li(class="dropdown" id="menu1")
+                            a(class="dropdown-toggle" data-toggle="dropdown" href="#menu3") Options
+                                b(class="caret")
+                                ul(class="dropdown-menu")
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
+                                    li
+                                        a(href='/about/') ПодМеню
                         li
                             a(href='/about/') О программе
+
         .container
             block content
             footer
