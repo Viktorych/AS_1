@@ -5,5 +5,5 @@ module.exports.locationInfo= function (req,res) {
     res.render('location-info',{title :'О местоположении'})
 };
 module.exports.addReview= function (req,res) {
-    res.render('index',{title :'Добавить местоположение'})
+    res.render('location-review-form',{title :'Добавить местоположение'})
 };
