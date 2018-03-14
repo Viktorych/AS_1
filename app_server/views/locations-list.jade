@@ -1,103 +1,27 @@
 extends layout
 
+include _includes/sharedHTMLfunctions
+
 block content
     #banner.page-header
         .row
             .col-lg-6
-                h1 AS
-                    small &nbsp; Система учета неучтенного.
+                h1= pageHeader.title
+                small &nbsp;#{pageHeader.stripline}
     .row
         .col-xs-12.col-sm-8
-            h4
-                a(href='/location') Кабель ВВГг 15 3 1.5 мм.
-                small &nbsp;
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                    span.glyphicon.glyphicon-star
-                span.badge.pull-right.badge-dark 100m
-            p.address Токопроводящая жила - медная, однопроволочная или многопроволочная, круглой или секторной формы, 1 или 2 класса по ГОСТ 22483.
-                | Изоляция - из поливинилхлоридного пластиката (маркировка жил цветовая).
-                | Скрутка - изолированные жилы многожильных кабелей скручены в сердечник с водоблокирующими элементами.
-                | Внутренняя оболочка - из ПВХ пластиката или мелонаполненной невулканизированной резины с заполнением наружных промежутков между изолированными жилами. Допускается заполнение жгутами наружных промежутков между круглыми изолированными жилами с наложением скрепляющих лент и экструдированной внутренней оболочкой, допускается обмотка лентами из полимерного материала. Допускается наложение двухслойной внутренней экструдированной оболочки.
-                | Гидроизоляционный слой - из электропроводящей водоблокирующей ленты.
-                | Экран - из медных проволок и спирально наложенной медной ленты. Допускается наложение экрана из медных лент.
-                | Гидроизоляционный слой - из водоблокирующих лент.
-                | Наружная оболочка - из ПВХ пластиката.
-                | Источник: https://cable.ru/cable/group-vvgg.php
-            p
-                span.label.label-warning Электрика
-                | &nbsp;
-                span.label.label-warning Кабеля
-                | &nbsp;
-                span.label.label-warning .....
-                | &nbsp;
-        .col-xs-12.col-sm-4
-            p.lead Склад энегоцеха
-    .row
-        .col-xs-12.col-sm-8
-            h4
-                a(href='/location') Кабель ВВГг 15 3 1.5 мм.
-                small &nbsp;
-
-                span.badge.pull-right.badge-dark 100m
-            p.address Токопроводящая жила - медная, однопроволочная или многопроволочная, круглой или секторной формы, 1 или 2 класса по ГОСТ 22483.
-                | Изоляция - из поливинилхлоридного пластиката (маркировка жил цветовая).
-                | Скрутка - изолированные жилы многожильных кабелей скручены в сердечник с водоблокирующими элементами.
-                | Внутренняя оболочка - из ПВХ пластиката или мелонаполненной невулканизированной резины с заполнением наружных промежутков между изолированными жилами. Допускается заполнение жгутами наружных промежутков между круглыми изолированными жилами с наложением скрепляющих лент и экструдированной внутренней оболочкой, допускается обмотка лентами из полимерного материала. Допускается наложение двухслойной внутренней экструдированной оболочки.
-                | Гидроизоляционный слой - из электропроводящей водоблокирующей ленты.
-
-            p
-                span.label.label-warning Электрика
-                | &nbsp;
-                span.label.label-warning Кабеля
-                | &nbsp;
-                span.label.label-warning .....
-                | &nbsp;
-        .col-xs-12.col-sm-4
-            p.lead Склад энегоцеха
-    .row
-        .col-xs-12.col-sm-8
-            h4
-                a(href='/location') Кабель ВВГг 15 3 1.5 мм.
-                small &nbsp;
-
-                span.badge.pull-right.badge-dark 100m
-            p.address Токопроводящая жила - медная, однопроволочная или многопроволочная, круглой или секторной формы, 1 или 2 класса по ГОСТ 22483.
-
-                | Экран - из медных проволок и спирально наложенной медной ленты. Допускается наложение экрана из медных лент.
-                | Гидроизоляционный слой - из водоблокирующих лент.
-                | Наружная оболочка - из ПВХ пластиката.
-                | Источник: https://cable.ru/cable/group-vvgg.php
-            p
-                span.label.label-warning Электрика
-                | &nbsp;
-                span.label.label-warning Кабеля
-                | &nbsp;
-                span.label.label-warning .....
-                | &nbsp;
-        .col-xs-12.col-sm-4
-            p.lead Склад энегоцеха
-    .row
-        .col-xs-12.col-sm-8
-            h4
-                a(href='/location') Кабель ВВГг 15 3 1.5 мм.
-                small &nbsp;
-
-                span.badge.pull-right.badge-dark 100m
-            p.address Токопроводящая жила - медная, однопроволочная или многопроволочная, круглой или секторной формы, 1 или 2 класса по ГОСТ 22483.
-                | Изоляция - из поливинилхлоридного пластиката (маркировка жил цветовая).
-                | Скрутка - изолированные жилы многожильных кабелей скручены в сердечник с водоблокирующими элементами.
-
-                | Наружная оболочка - из ПВХ пластиката.
-                | Источник: https://cable.ru/cable/group-vvgg.php
-            p
-                span.label.label-warning Электрика
-                | &nbsp;
-                span.label.label-warning Кабеля
-                | &nbsp;
-                span.label.label-warning .....
-                | &nbsp;
-        .col-xs-12.col-sm-4
-            p.lead Склад энегоцеха
+            .row.list-group
+                each location in locations
+                    .col-xs-12.list-group-item
+                        h4
+                            a(href="/location")= location.name
+                            small &nbsp;
+                                +outputRating(location.rating)
+                            span.badge.pull-right.badge-default= location.distance
+                        p.address= location.address
+                        p
+                            each facility in location.facilities
+                                span.label.label-warning= facility
+                                small &nbsp;
+    .col-xs-12.col-sm-4
+        p.lead= sidebar
