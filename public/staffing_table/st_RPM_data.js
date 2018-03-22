@@ -1,4 +1,4 @@
-var manningtabledata = [
+var st_RPM_data = [
     {
         "id": "ПАО Русполимет",
         "post":"Генеральный директор",
@@ -336,7 +336,7 @@ var manningtabledata = [
 
 ];
 
-
+/*
 function getManningtableData() {
     ManningtableData = [];
     manningtabledata.forEach(function (item, i, arr) {
@@ -366,4 +366,4 @@ function getManningtableDataNode() {
     return ManningtableDataNode;
 
 }
-
+*/

@@ -18,7 +18,7 @@
             border: solid 1px blue;
         }
     </style>
-    <script src="/manningtable/manningtable_data.js"></script>
+    <script src="/staffing_table/st_RPM_data.js"></script>
     <script src="/javascripts/go.js"></script>
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
      <script src="/javascripts/goSamples.js"></script>  <!-- this is only for the GoJS Samples framework -->
@@ -137,8 +137,8 @@
                     { corner: 5, selectable: false },
                     $(go.Shape, { strokeWidth: 3, stroke: "#424242" } ));  // dark gray, rounded corner links
             // set up the nodeDataArray, describing each person/position
-            var nodeDataArray =getManningtableDataNode();
-            console.log(nodeDataArray);
+            //var nodeDataArray =getManningtableDataNode();
+            //console.log(nodeDataArray);
             /*var nodeDataArray = [
 
                 { key: 0, name: "Ban Ki-moon 반기문" },
@@ -189,7 +189,7 @@
                     { nodeParentKeyProperty: "parent",
                         nodeKeyProperty:"id",
                         // this property refers to the parent node data
-                        nodeDataArray: nodeDataArray });
+                        nodeDataArray: st_RPM_data });
             // Overview
             myOverview =
                 $(go.Overview, "myOverviewDiv",  // the HTML DIV element for the Overview
