@@ -205,10 +205,7 @@
                 // search four different data properties for the string, any of which may match for success
                 // create a case insensitive RegExp from what the user typed
                 var regex = new RegExp(input.value, "i");
-                var results = myDiagram.findNodesByExample({ name: regex },
-                    { phone: regex },
-                    { post: regex },
-                    { surname: regex });
+                var results = myDiagram.findNodesByExample({ id: regex });
                 myDiagram.highlightCollection(results);
                 // try to center the diagram at the first node that was found
                 if (results.count > 0) myDiagram.centerRect(results.first().actualBounds);
